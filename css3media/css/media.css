@@ -1,0 +1,141 @@
+/*总体设置*/
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+.boss{
+	background:black;
+	color:white;
+	font:14px "arial rounded mt bold","microsoft yahei";
+}
+ul{
+	list-style-type:none;
+	
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+/*头部设置*/
+h2{
+	color:#f90;
+	padding-top:50px;
+	font-size:35px;
+	/*margin:0 auto;*/
+}
+/*导航部分设置*/
+nav ul{
+	display:flex;
+	margin:12px 0px;
+	background:#663;
+	border-radius:6px;
+}
+nav li{
+	flex:1;
+	text-align:center;
+	line-height:50px;
+}
+/*主体部分设置*/
+.main{
+	display:flex;
+}
+/*左边设置*/
+section{
+	flex:3;
+	margin-right:8px;
+	margin-left:5px;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	color:black;
+}
+section img{
+	width:100%;
+}
+section p{
+	text-indent: 2em;
+	margin: 20px 0;
+	line-height: 24px;
+}
+/*h2{
+	margin-bottom:20px;
+}*/
+/*右边设置*/
+aside{
+	/*max-width:25%;*/
+	flex:1;
+	margin-right:9px;
+	margin-left:5px;
+}
+h4 {
+	border-bottom: 1px solid #ddd;
+	line-height: 30px;
+	color:black;
+}
+/*右边上部分设置*/
+aside>div{
+	flex: 1;
+	background: #fff;
+	border-radius: 5px;
+	padding: 15px 10px;
+	margin-bottom: 10px;
+}
+aside>div:nth-child(1) a{
+	color: #464646;
+	line-height: 24px;
+}
+/*右边下部分设置*/
+aside>div:nth-child(2) ul{
+	display:flex;
+	flex-wrap:wrap;
+}
+aside>div:nth-child(2) li{
+	width:33.33%;
+	padding:3px;
+}
+aside>div:nth-child(2) li img{
+	width:100%;
+	padding:5px;
+	border:1px solid #ddd;
+}
+/*响应式部分设置*/
+@media screen and (max-width:800px){
+	nav ul{
+		flex-direction:column;
+		background:transparent;
+	}
+	nav li{
+		background:#663;
+		margin:5px;
+		border-radius:5px;
+		box-shadow:2px 1px 2px 1px rgba(255,255,255,0.5);
+	}
+	.main{
+		flex-direction:column;
+	}
+	aside{
+		max-width:100%;
+	}
+	aside>div:nth-child(2) li{
+		width:22%;
+	}
+	footer{
+		flex-direction:column;
+	}
+	footer a{
+		width:100%;
+	}
+	footer p{
+	text-align:center;
+		background:#663;
+		margin:10px;
+		padding:10px;
+	}
+}
+/*尾部设置*/
+footer{
+	/*text-align:center;*/
+	display:flex;
+	justify-content:center;
+}

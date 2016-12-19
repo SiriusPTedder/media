@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/media.css" />
+	</head>
+
+	<body>
+		<!--总体部分-->
+		<div class="boss">
+
+			<head>
+				<h2>Media Query Demo</h2>
+				<!--导航部分-->
+				<nav>
+					<ul>
+						<li><a href="#">产品product</a></li>
+						<li><a href="#">设计design</a></li>
+						<li><a href="#">前端front end</a></li>
+					</ul>
+				</nav>
+			</head>
+			<div class="main">
+				<!--左侧盒子设置-->
+				<section>
+					<h3>响应式web设置</h3>
+					<div class="left">
+						<img src="img/web.jpg" />
+						<p>
+							十一长假已然过去了一大半。今天倒真是晴朗的不行，向窗外望去几乎可以看
+							到阳光穿过凉爽的空气一缕缕洒落下来的样子。自从不再是学生，对每年的几
+							次长假就无比珍惜，想方设法让每一天都尽量过的饱满一些；夜里闭上眼，满
+							脑子就都是Drupal、博客、咖啡、使命召唤、南方公园。..也许需要出门走一
+							走了。</p>
+						<p>OK开始说正经的了。在之前一篇译文中，我们了解了响应式Web设计的概念、组
+							成要素以及基本的实现思路。今天继续相关话题，我们将从前文介绍过的"弹性
+							布局结构"这方面出发，通过一个具体的实例来深入学习。</p>
+						<p>如今的屏幕分辨率，小至320px（iPhone），大到2560px甚至更高（大显示器），
+							变化范围极大。除了使用传统的台式机，用户会越来越多的通过手机、上网本、
+							iPad一类的平板设备来浏览页面。这种情况下，固定宽度的设计方案将会显得
+							越发不合理。页面需要有更好的适应性，其布局结构要做到根据不同的设备及
+							屏幕分辨率进行响应调整。接下来，我们将了解一下怎样通过HTML5和CSS3 Media
+							 Queries（媒介查询）相关技术来实现跨设备跨浏览器的响应式Web设计方案。</p>
+						<p>我们将范例页面的父级容器宽度设置为固定的980px，对于桌面浏览环境，该宽度
+							适用于任何宽于1024像素的分辨率。我们通过media query来监测那些宽度小于
+							980px的设备分辨率，并将页面的宽度设置由"固定"方式改为"液态"，布局元素
+							的宽度随着浏览器窗口的尺寸变化进行调整。当可视部分的宽度进一步减小到
+							650px以下时，主要内容部分的容器宽度会增大至全屏，而侧边栏将被置于主内
+							容部分的下方，整个页面变为单栏布局。</p>
+					</div>
+				</section>
+				<!--右边盒子设置-->
+				<aside>
+					<!--右侧上半部分设置-->
+					<div>
+						<h4>最多访问文章</h4>
+						<ul>
+							<li><a href="#">·《全民编程》我在微软生活中所接触的</a></li>
+							<li><a href="#">·Eclipse安装SVN插件方式简明介绍</a></li>
+							<li><a href="#">·使用Eclipse调试Java程序的10个技巧 </a></li>
+							<li><a href="#">·三步学会Java Socket编程 </a></li>
+							<li><a href="#">·程序员妻子自述: 那些程序员教给我的</a></li>
+							<li><a href="#">·我希望在20岁时就知道的26条时间管理 </a></li>
+							<li><a href="#">·详解Java解析XML的四种方法 </a></li>
+							<li><a href="#">·Java数组声明、创建、初始化</a></li>
+						</ul>
+					</div>
+					<!--右侧下半部分设置-->
+					<div>
+						<h4>最新发布的照片</h4>
+						<ul>
+							<li><a href="#"><img src="img/2.jpg"/></a></li>
+							<li><a href="#"><img src="img/3.jpg"/></a></li>
+							<li><a href="#"><img src="img/4.jpg"/></a></li>
+							<li><a href="#"><img src="img/5.jpg"/></a></li>
+							<li><a href="#"><img src="img/6.jpg"/></a></li>
+							<li><a href="#"><img src="img/2.jpg"/></a></li>
+							<li><a href="#"><img src="img/3.jpg"/></a></li>
+							<li><a href="#"><img src="img/4.jpg"/></a></li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+			<!--尾部设置-->
+			<footer>
+                       <p><a href="#">关于站长之家 </a></p>
+                       	 <p> <a href="#">联系我们(电话) </a></p>
+                       	  <p><a href="#">广告服务</a></p>
+                       	  <p><a href="#"> 友情链接 </a></p>
+                          <p><a href="#">网站地图 </a></p>
+                       	  <p><a href="#">版权声明</a></p>
+                       	 <p> <a href="#"> 人才招聘</a></p>
+                       
+			</footer>
+		</div>
+	</body>
+
+</html>
